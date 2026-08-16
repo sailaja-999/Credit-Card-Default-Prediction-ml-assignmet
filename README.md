@@ -1,16 +1,14 @@
-Here's a complete README.md section based on your dataset and actual results.
-
 Credit Card Default Prediction Using Machine Learning
-a. Problem Statement
+
+ Problem Statement:
 
 Financial institutions face significant risks due to customers defaulting on their credit card payments. The objective of this project is to predict whether a credit card customer will default on their payment in the following month based on demographic information, repayment history, bill statements, and previous payment records.
 
 Five machine learning classification algorithms were implemented and compared to identify the most effective model for predicting customer default behavior. A Streamlit web application was developed to provide an interactive interface for predicting the default risk of individual customers.
 
-b. Dataset Description
-Dataset Name
-
-Default of Credit Card Clients Dataset
+ Dataset Description:
+ 
+Dataset Name:Default of Credit Card Clients Dataset
 
 Dataset Source
 
@@ -55,14 +53,14 @@ Naive Bayes Classifier
 Random Forest (Ensemble)
 
 Model Comparison Table
-| ML Model Name                  | Observation about Model Performance                                                                                                                                                         |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Logistic Regression            | Achieved good overall accuracy and precision. However, recall was relatively low, indicating that several default cases were missed.                                                        |
-| Decision Tree                  | Able to capture non-linear patterns but showed lower overall accuracy and MCC compared to other models.                                                                                     |
-| KNN                            | Produced balanced results with moderate accuracy and F1-score. Performance was dependent on distance-based similarities among customers.                                                    |
-| Naive Bayes                    | Achieved the highest recall, successfully identifying many default customers. However, very low precision and accuracy resulted in a high number of false positives.                        |
-| Random Forest (Ensemble)       | Delivered the best overall performance with the highest Accuracy (81.23%), AUC (0.7545), F1-score (0.4623), and MCC (0.3781). The ensemble approach improved generalization and robustness. |
-| Overall Winner for the Dataset | **Random Forest (Ensemble)** emerged as the best model due to its superior Accuracy, AUC, F1-score, and MCC, providing the most balanced performance across all evaluation metrics.         |
+| ML Model Name            | Accuracy | AUC    | Precision | Recall | F1 Score | MCC    |
+| ------------------------ | -------- | ------ | --------- | ------ | -------- | ------ |
+| Logistic Regression      | 0.8077   | 0.7076 | 0.6868    | 0.2396 | 0.3553   | 0.3244 |
+| Decision Tree            | 0.7145   | 0.6075 | 0.3694    | 0.4115 | 0.3893   | 0.2042 |
+| KNN                      | 0.7928   | 0.7014 | 0.5487    | 0.3564 | 0.4322   | 0.3233 |
+| Naive Bayes              | 0.4160   | 0.6516 | 0.2496    | 0.8176 | 0.3824   | 0.1111 |
+| Random Forest (Ensemble) | 0.8123   | 0.7545 | 0.6310    | 0.3647 | 0.4623   | 0.3781 |
+
 
 
 Observations on Model Performance
